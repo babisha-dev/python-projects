@@ -53,4 +53,50 @@ d={1:"apple",2:"orange",3:"guava"}
 print(d[2])
 print(d.get(3))
 
-  
+# Conditional Statement
+
+  # if,elif,else
+age =10
+if age>=18 and age<=25:
+    print("adult")
+elif age<18:
+    print("child")
+else:
+    print("post adult")
+
+    # Nested if-else
+is_member=False;
+if age>18:
+    if is_member:
+        print("member")
+    else:
+        print("non member")
+else:
+    print("Below 18 cannot be a member3")
+
+    # Ternary Operator
+s="Adult" if age>18 else "child"
+print(s)
+   # Match case
+number=5
+match number:
+    case 1:
+        print("one")
+    case 2 | 3:
+        print("two or three")
+    case _:
+        print("none")
+
+# Loops
+  #For
+lis=[1,2,3,4]
+for i in range(lis[1],len(lis)+1):
+    print(i)
+for i in lis:
+    print(i)
+
+    # while
+count=0
+while(count<5):
+    count=count+1
+    print(count)
