@@ -52,6 +52,10 @@ for i in s1:
 d={1:"apple",2:"orange",3:"guava"}
 print(d[2])
 print(d.get(3))
+print(d) # both key and val inside {}
+print(d.keys()) # only keys
+print(d.values()) # only value
+print(d.items())  # both key and val
 
 # Conditional Statement
 
@@ -95,8 +99,61 @@ for i in range(lis[1],len(lis)+1):
 for i in lis:
     print(i)
 
-    # while
+   # while
 count=0
 while(count<5):
     count=count+1
     print(count)
+
+
+# Function
+def fun():
+    print("hello world")
+fun()
+
+def evenOrOdd(x):
+    if(x%2==0):
+        return "even"
+    else:
+        return "Odd"
+print(evenOrOdd(12))
+print(evenOrOdd(11))
+
+# Arguments
+ # Default args
+def myFun(x1,y1=10):
+ print("x:", x1, "y:", y1)
+
+myFun(10,20)
+myFun(20)
+
+ # keyword args using parameter names, order doesnt matter
+def student(fname, lname):
+    print(fname,lname)
+student(fname="hello",lname="world")
+student(lname="world",fname="hello")
+
+ #positional args
+
+def name(name,age):
+     print("My name is ", name)
+     print("My age is ", age)
+name("tom", 4)
+name(4,"tom")
+
+ # Arbitrary args
+def myfun(*args,**kwargs):
+   for i in args:
+    print(i)
+   for key,val in kwargs.items():
+        print(f"{key}:{val}")
+myfun("HII","TOM",name='Tom',age=4,Skills='barking')
+
+# Function within function
+def outer():
+    print("I am out")
+    def inner():
+        print("I am in")
+    inner()
+outer()
+
