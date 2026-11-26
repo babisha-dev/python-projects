@@ -1,4 +1,4 @@
+str1="10"
+str2="20"
+print(int(str1)+ int(str2))
 
-set1=[10,20,30,30,20]
-convertSet=set(set1)
-print(convertSet)
